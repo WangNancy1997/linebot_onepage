@@ -1,0 +1,156 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0",maximum-scale=1, user-scalable=no">
+      <title>linebot使用教學</title>
+      
+      <!-- owl -->
+      <!-- owl.carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  </link>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  </link>
+
+
+  <!-- 字體 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?sfamily=Roboto:wght@700;900&display=swap" rel="stylesheet">
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+  <!-- CSS CDN -->
+  <link rel="stylesheet" href="/css/line.css" href="style.css?v=8">
+
+
+  <!-- 引入headroom -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.12.0/headroom.min.js"></script>
+
+  </head>
+
+  <body>
+
+    
+    <div class="main_content_wrap linebot-wrap">
+
+
+      <img class="nav_logo" src="/img/標準字.png" alt="" >
+     
+    </div>
+  
+    <div class="lineAD_menu headroom headroom--unpinned">
+      <div class="lineAD_menu_item">
+        <a href="#p1">關於Guess365預測機器人</a>
+
+      </div>
+      <div class="lineAD_menu_item">
+        <a href="#p2">訂閱方案</a>
+
+      </div>
+      <div class="lineAD_menu_item">
+      <a  href="#p3">Line會員登入Guess365</a>
+      </div>
+
+      <!-- <a href="#p4">推薦Line好友拿禮券</a> -->
+    </div>
+    <div class="m100"></div>
+    <div class="linebot-box">
+     
+      <!-- 固定按鈕＿推薦好友 -->
+      <a href="#p4">
+        <img class="icon_fixed " src="/img/icon.png" alt=""  >
+      </a>
+  
+     
+      
+      <img src="/img/介面/介紹１.jpg" alt="" id="p1">
+      <img src="/img/介面/介紹2.png" alt="">
+        <!--滑快輪播 -->
+    <div class="owl_box">
+
+      <!-- <h1 class="owl_h1">不錯過任何賽事預測</h1> -->
+      <div class="owl-carousel owl-theme">
+
+          <div class="item">
+          <img src="/img/Group 351.png" alt="">
+          </div>
+          <div class="item">
+              <img src="/img/Group 368.png" alt="">
+          </div>
+          <div class="item">
+              <img src="/img/Group 372.png" alt="">
+          </div>
+          <div class="item">
+              <img src="/img/Group 373.png" alt="">
+          </div>
+          <div class="item">
+              <img src="/img/Group 374.png" alt="">
+          </div>
+          
+        </div>
+    </div>
+
+    <img src="/img/介面/介紹4.jpg" alt=""  id="p2">
+    <img src="/img/介面/介紹3.jpg" alt="" >
+    <img src="/img/介面/介紹5.jpg" alt="" id="p3">
+    <img src="/img/介面/介紹6.jpg" alt=""  id="p4">
+    </div>
+
+      <script>
+      
+      $(".owl-carousel").owlCarousel({
+    center:true,
+    item:2,      
+    loop: false, // 循環播放
+    margin: 10, // 外距 10px
+    nav: false, // 顯示點點
+    dots:false,
+    stagePadding:0,
+    responsive: {
+      0: {
+        items: 1.15 // 螢幕大小為 0~600 顯示 1 個項目（顯示像大小）
+      },
+      600: {
+        items:1.1// 螢幕大小為 600~1000 顯示 3 個項目
+        
+      },
+      1000: {
+        items: 1.1 // 螢幕大小為 1000 以上 顯示 5 個項目
+      }
+    }
+  });
+  </script>
+
+<!-- HEADROOM套件 -->
+<script>
+var myElement = document.querySelector(".headroom");
+
+var headroom = new Headroom(myElement, {
+  offset : 5,
+  tolerance : {
+    up : 50,
+    down : 0
+  },
+});
+
+headroom.init();
+
+
+</script>
+
+<!-- 往下推 -->
+<script>
+
+</script>
+
+  </body>
+
+
+
+
+  </html>
